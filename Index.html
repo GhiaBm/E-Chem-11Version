@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Styles-NavBar.css" />
+    <link rel="stylesheet" href="Styles-Preloader.css" />
+    <link rel="stylesheet" href="Styles-slides.css" />
+    <link rel="stylesheet" href="Animation.css" />
+  </head>
+  <body>
+    <header>
+      <div id="preloader"></div>
+      <img class="logo" src="Logo.png" alt="logo" />
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="nav-icon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Lessons.html">Lessons</a></li>
+        <li>
+          <a href="appendix.html">Appendix</a>
+        </li>
+        <li><a href="Contact-us.html">Contact us</a></li>
+      </ul>
+      <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+          loader.style.display = "none";
+        });
+      </script>
+    </header>
+    <div class="Introduction-HomePage">
+      <h2>E-Chem</h2>
+      <h4>11th Version</h4>
+      <h3>
+        Where we will set you on a blind date with chemistry and make you will
+        fall in love with Chemistry again! We will help you as well in your
+        journey at school with chemistry.. Enjoy...
+      </h3>
+    </div>
+
+    <section class="container-sliderss">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <div id="section1">
+            <video class="Video-Homepage" height="100%" width="100%" controls>
+              <source src="Video1.mp4" type=video/mp4>
+            </video>
+          </div>
+          <div id="section2">
+            <video class="Video-Homepage" height="100%" width="100%" controls>
+              <source src="Video2.mp4" type=video/mp4>
+            </video>
+          </div>
+          <div id="section3">
+            <video class="Video-Homepage" height="100%" width="100%" controls>
+              <source src="Video3.mp4" type=video/mp4>
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <video class="Video" height="600px" width="500px" controls>
+      <source src="Video-firsthomepage.mp4" type=video/mp4>
+    </video>
+
+    <footer></footer>
+  </body>
+</html>

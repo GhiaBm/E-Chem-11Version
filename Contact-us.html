@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Styles-NavBar.css" />
+    <link rel="stylesheet" href="Styles-Preloader.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="preloader"></div>
+      <img class="logo" src="Logo.png" alt="logo" />
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="nav-icon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Lessons.html">Lessons</a></li>
+        <li>
+          <a href="appendix.html">Appendix</a>
+        </li>
+        <li><a href="Contact-us.html">Contact us</a></li>
+      </ul>
+      <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+          loader.style.display = "none";
+        });
+      </script>
+    </header>
+    <div id="contactuscontainer">
+      <img src="contactus.gif" class="contactus-gifbox1" />
+      <div id="contact-us-box">
+        <p class="intro4">Contact Us, We are listening!</p>
+
+        <label for="Name" class="Questions-contactus1">Full Name:</label>
+        <input type="text" id="Name" name="Name" placeholder="Jane Doe" />
+        <label for="email" class="Questions-contactus">Email:</label>
+        <input type="text" id="email" name="email" placeholder="@gmail.com" />
+        <label for="message" class="Questions-contactus"
+          >Leave a Message:</label
+        >
+        <input
+          type="text"
+          id="message"
+          name="message"
+          placeholder="your obsession!"
+        />
+        <div class="box1random-contactus">
+          <a class="button1" role="button">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a class="button1" role="button">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a class="button1" role="button"><i class="bi bi-envelope"></i> </a>
+          <a class="button1" role="button">
+            <i class="bi bi-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <button class="button" onclick="myFunction()">Send</button>
+      <script>
+        function myFunction() {
+          alert("Your ideas have been transmitted successfully");
+        }
+      </script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Styles-NavBar.css" />
+    <link rel="stylesheet" href="Lessons.css" />
+    <link rel="stylesheet" href="Styles-Preloader.css" />
+
+    <link rel="stylesheet" href="Animation.css" />
+  </head>
+  <body>
+    <header>
+      <div id="preloader"></div>
+      <img class="logo" src="Logo.png" alt="logo" />
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="nav-icon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="Lessons.html">Lessons</a></li>
+        <li>
+          <a href="appendix.html">Appendix</a>
+        </li>
+        <li><a href="Contact-us.html">Contact us</a></li>
+      </ul>
+      <script>
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+          loader.style.display = "none";
+        });
+      </script>
+    </header>
+    <div class="periodic-table">
+      <img src="Hydrogen box.png" />
+      <img src="Magnessim.png" />
+      <img src="Hydrogen box.png" />
+      <img src="Magnessim.png" />
+      <img src="Hydrogen box.png" />
+      <img src="Magnessim.png" />
+      <img src="Hydrogen box.png" />
+    </div>
+    <div class="sectionA">
+      <p class="title-lessons1">Lessons - 11th Grade-Version</p>
+      <p class="intro-lessons">
+        You can find below lessons you might need external resourses for, we got
+        you with these resourses to make sure you got fully cable of each
+        lesson!
+      </p>
+    </div>
+    <div class="sectionB">
+      <p class="title-lessons">Unit: Atoms, Compounds, and Ions</p>
+      <a
+        class="links-lesons"
+        href="https://www.khanacademy.org/science/chemistry/atomic-structure-and-properties "
+        target="_blank"
+        >For more information, click here!</a
+      >
+      <img src="chem 2.gif" class="lessons-images1" />
+    </div>
+    <div class="sectionC">
+      <p class="title-lessons2">Unit: Chemical Reactions and Stoichiometry</p>
+      <a
+        class="links-lessons1"
+        href="https://www.khanacademy.org/science/chemistry/chemical-reactions-stoichiome "
+        target="_blank"
+        >For more information, click here!</a
+      >
+      <img src="gif chem.gif" class="lessons-images2" />
+    </div>
+    <div class="sectionB">
+      <p class="title-lessons">Unit: Periodic Table</p>
+      <a
+        class="links-lesons"
+        href="https://www.khanacademy.org/science/chemistry/periodic-table "
+        target="_blank"
+        >For more information, click here!</a
+      >
+      <img src="periodic table.png" class="lessons-images1" />
+    </div>
+    <div class="sectionC">
+      <p class="title-lessons2">
+        Unit: Buffers, Titrations, and Solubility Equilibria
+      </p>
+      <a
+        class="links-lessons1"
+        href="https://www.khanacademy.org/science/chemistry/acid-base-equilibrium "
+        target="_blank"
+        >For more information, click here!</a
+      >
+      <img src="Titration.gif" class="lessons-images2" />
+    </div>
+  </body>
+</html>

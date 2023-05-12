@@ -1,0 +1,57 @@
+.periodic-table {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 0%;
+  padding-right: 30%;
+}
+.periodic-table img {
+  z-index: 14;
+  width: 40px;
+  animation: periodic-table 7s linear infinite;
+}
+@keyframes periodic-table {
+  0% {
+    transform: translate(0px, -100px);
+    opacity: 2;
+  }
+
+  50% {
+    transform: translate(400px, 400px);
+  }
+  100% {
+    transform: translate(610px, 610px);
+  }
+}
+.periodic-table img:nth-child(1) {
+  animation-delay: 0s;
+}
+.periodic-table img:nth-child(2) {
+  animation-delay: 6s;
+}
+.periodic-table img:nth-child(3) {
+  animation-delay: 2s;
+}
+.periodic-table img:nth-child(4) {
+  animation-delay: 1s;
+}
+.periodic-table img:nth-child(5) {
+  animation-delay: 3s;
+}
+.periodic-table img:nth-child(6) {
+  animation-delay: 4s;
+}
+.periodic-table img:nth-child(7) {
+  animation-delay: 5s;
+}
+.periodic-table img:nth-child(8) {
+  animation-delay: 0s;
+}
+.periodic-table img:nth-child(9) {
+  animation-delay: 6s;
+}
+.periodic-table img:nth-child(10) {
+  animation-delay: 2s;
+}
